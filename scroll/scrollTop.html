@@ -146,17 +146,17 @@
     impedit molestiae reprehenderit autem ex? Atque, iste deleniti! Minus ea unde dolorum non provident?
   </p>
 
-  <button type="button" id="btn" onclick="backToTopp()"> back to top </button>
+  <button type="button" id="btn"> back to top </button>
 
   <script>
 
-function backToTopp() {
+    function backToTop() {
 
-window.scrollBy(0, -500)
+      window.scrollBy({top : -500 ,behavior : 'smooth' }) ;
 
-}
+    }
 
-    document.getElementById("bt").addEventListener("click", function backToTop() {
+    document.getElementById("btn").addEventListener("click", function backToTop() {
 
       window.scrollBy(0, -500)
 
